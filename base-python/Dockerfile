@@ -15,5 +15,7 @@ RUN echo "Downloading Miniconda..." && \
     rm Miniconda3-latest-Linux-x86_64.sh
 ENV PATH $HOME/miniconda3/bin:$PATH
 
+COPY environment.yml $HOME
+
 # Install various Python dependencies...
-RUN conda install --yes jupyter
+RUN conda env create -f environment.yml
