@@ -19,3 +19,10 @@ COPY environment.yml $HOME
 
 # Install various Python dependencies...
 RUN conda env create -f environment.yml
+
+EXPOSE 8888
+
+ENTRYPOINT ["/bin/bash", "-c"]
+
+#Activate our python environment and start the jupyter notebook
+CMD ["source activate base-python && jupyter notebook --ip=0.0.0.0 --allow-root"]
