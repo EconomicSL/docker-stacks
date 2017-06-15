@@ -1,0 +1,9 @@
+name: base-python
+
+dependencies:
+  - python >= 3.0
+  - jupyter
+  - pandas
+  - plotly
+  - pip:
+    - cufflinks
