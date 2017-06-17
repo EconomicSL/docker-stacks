@@ -1,3 +1,3 @@
-FROM ibillett/base-python:v0.1
+FROM ibillett/esl-base-python:v0.1
 
-ADD https://github.com/EconomicSL/auctions-simulation-example
+RUN git clone https://github.com/EconomicSL/auctions-simulation-example.git
