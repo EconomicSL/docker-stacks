@@ -1,4 +1,4 @@
-#esl-base-docker
+# esl-base-docker
 
 This Dockerfile specifies the absolute essentials for being able to run an [ESL](https://github.com/EconomicSL) simulation.
 
