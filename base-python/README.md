@@ -4,4 +4,4 @@ This Dockerfile builds on `esl-base-docker`, and creates a python environment in
 
 Build using the following command...
 
-`docker build . -t esl/base-python:v0.1`
+`docker build --rm . -t esl/base-python:v0.1`
